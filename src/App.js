@@ -30,7 +30,7 @@ const hitUrl = () => {
 }
 
   const hitUrlNotify = () => {
-    fetch('https://push-notifications-app-aip.herokuapp.com/push');
+    //fetch('https://push-notifications-app-aip.herokuapp.com/push');
 }
 
   return (
