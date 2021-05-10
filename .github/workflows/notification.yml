@@ -42,7 +42,7 @@ jobs:
       run: npm install --global surge 
 
     - name: Run Surge
-      run: surge ./build inexpensive-cave.surge.sh --token ${{secrets.ROUTER_SECRET}}
+      run: surge ./build hungry-lumber.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
  
     
  
