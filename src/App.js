@@ -13,7 +13,7 @@ function App() {
   }, [])
 
 
-  Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
+  Pushy.register({ appId: '6098f972be50e00f1b8f56c1' }).then(function (deviceToken) {
     // Print device token to console
     console.log('Pushy device token: ' + deviceToken);
 
