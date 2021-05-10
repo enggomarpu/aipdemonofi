@@ -17,7 +17,7 @@ const Header = () => {
       });
     return (
         <div>
-            <h2>Notification{count}</h2>
+            <h2>Notificationssssssssssssssssssssss{count}</h2>
             <h1>Hello</h1>
         </div>
     );
