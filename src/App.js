@@ -18,6 +18,8 @@ import Notifications from "./components/Notifications/Notifications";
 import AffiliatesContacts from "./components/Contacts/affiliate-contacts";
 import ForgotPassword from "./components/authentication/login/forgot-password.component";
 import CreatePassword from "./components/authentication/login/create-password.component";
+import Pushy from 'pushy-sdk-web';
+
 
 export const store = initStore();
 serviceInterceptor.interceptor();
