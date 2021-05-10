@@ -35,6 +35,17 @@ const LoginComponent = (props) => {
     //console.log()
   }, [])
 
+  Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
+    // Print device token to console
+    console.log('Pushy device token: ' + deviceToken);
+    setDeviceTokenApp(deviceToken);
+
+    // Succeeded, optionally do something to alert the user
+}).catch(function (err) {
+    // Handle registration errors
+    console.error(err);
+});
+
   if (!loginState.error && Object.keys(loginState.user).length != 0) {
     if (loginState.user.IsFirstLogin) {
       if (!loginState.withoutToken) {
@@ -60,17 +71,7 @@ const LoginComponent = (props) => {
 
   const onSubmit = async (formdata, e) => {
 
-    Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
-      // Print device token to console
-      console.log('Pushy device token: ' + deviceToken);
-      setDeviceTokenApp(deviceToken);
-  
-      // Succeeded, optionally do something to alert the user
-  }).catch(function (err) {
-      // Handle registration errors
-      console.error(err);
-  });
-
+    
     e.preventDefault();
     if (formdata.rememberme) {
       localStorage.setItem('username', formdata.username);
