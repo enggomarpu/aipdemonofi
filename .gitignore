@@ -1,0 +1,8 @@
+vendor/
+build/
+deploy.txt
+deploy.json
+node_modules/
+src/components/CreateProfile/CreateProfile copy.js
+src/components/Profile/ProfileForm/ProfileForm copy.js
+src/img/Vector.png

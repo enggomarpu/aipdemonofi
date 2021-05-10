@@ -1,0 +1,77 @@
+.header {
+  background-color: $body-bg;
+  padding: 0;
+  height: $navebar-height;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  padding: 0 $cellGutter 0 0;
+
+  .navbar {
+    height: 100%;
+    padding: 0;
+    display: flex;
+
+    .navbar-brand {
+      background-color: $primary-color;
+      width: $sidebar-width;
+      height: 100%;
+      padding: 0 15px;
+      margin-right: $cellGutter;
+      display: flex;
+
+      .header-logo {
+        width: 130px;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.dashboard-nave {
+  .nave-border {
+    flex: 1 0;
+    margin: 0 15px;
+    border-bottom: 1px solid $border-color;
+    top: -22px;
+    position: relative;
+  }
+}
+
+.card-title-primary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-secondary;
+}
+
+.card-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: $heading-color;
+}
+
+.card-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1.25px;
+  color: $text-secondary;
+  text-decoration: none;
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
