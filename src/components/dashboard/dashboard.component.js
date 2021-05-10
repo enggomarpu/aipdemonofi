@@ -11,18 +11,31 @@ import FeaturedPosts from './post/featured-posts.component'
 import Posts from './post/post.component'
 import UpcomingEvents from "./Event/upcomingevents";
 import DashboardCalendar from "./Event/dashboard-calendar";
+import Pushy from 'pushy-sdk-web';
+
 
 const DashboardComponent = () => {
   
   const [openModal, setOpenModel] = useState(false);
 
   const addPost = () => {
-    setOpenModel(true);
+    setOpenModel(true)
   }
 
   // useEffect(() => {
    
   // }, [])
+
+  Pushy.setNotificationListener(function (data) {
+    // Print notification payload data
+    console.log('Received notification: ' + JSON.stringify(data));
+    //setCount(count + 1)
+    // Attempt to extract the "message" property from the payload: {"message":"Hello World!"}
+    let message = data.message || 'Test notification';
+
+    // Display an alert with message sent from 
+    //alert('Received notification: ' + message);
+  });
 
     return (
       <>
