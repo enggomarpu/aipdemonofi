@@ -41,8 +41,9 @@ jobs:
     - name: Install Surge
       run: npm install --global surge 
 
+    #run: surge ./build hungry-lumber.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
     - name: Run Surge
-      run: surge ./build hungry-lumber.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
+      run: surge ./build old-dogs.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
  
     
  
