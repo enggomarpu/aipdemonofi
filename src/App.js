@@ -75,16 +75,16 @@ const AvailableCollaborationComponent = lazy(() =>
 
 const App = () => {
 
-  Pushy.register({ appId: '6098f972be50e00f1b8f56c1' }).then(function (deviceToken) {
-    // Print device token to console
-    console.log('Pushy device token: ' + deviceToken);
-    //setDeviceTokenApp(deviceToken);
+//   Pushy.register({ appId: '6098f972be50e00f1b8f56c1' }).then(function (deviceToken) {
+//     // Print device token to console
+//     console.log('Pushy device token: ' + deviceToken);
+//     //setDeviceTokenApp(deviceToken);
 
-    // Succeeded, optionally do something to alert the user
-}).catch(function (err) {
-    // Handle registration errors
-    console.error(err);
-});
+//     // Succeeded, optionally do something to alert the user
+// }).catch(function (err) {
+//     // Handle registration errors
+//     console.error(err);
+// });
 
   return (
     <Provider store={store}>
