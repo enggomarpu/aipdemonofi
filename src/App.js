@@ -36,7 +36,7 @@ const hitUrl = () => {
   return (
     <div className="App">
       <Header />
-      <h1>Hello World</h1>
+      <h1>Hello World APP Updated</h1>
       <button onClick={hitUrl}>Button</button>
       <button onClick={hitUrlNotify}>Pusth Notification</button>
     </div>
