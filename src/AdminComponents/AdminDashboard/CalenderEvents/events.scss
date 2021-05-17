@@ -1,0 +1,111 @@
+.custom-calander {
+  .rbc-toolbar {
+    .rbc-toolbar-label {
+      text-align: left;
+      padding: 0;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .rbc-btn-group {
+      &:first-child {
+        position: absolute;
+        right: 15px;
+
+        button {
+          border: 0;
+          font-size: 0;
+          padding: 0 5px;
+
+          &:first-child {
+            display: none;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            font-size: 0;
+
+            &::after {
+              content: '';
+              border: 0;
+              -moz-osx-font-smoothing: grayscale;
+              -webkit-font-smoothing: antialiased;
+              display: inline-block;
+              font-style: normal;
+              font-variant: normal;
+              text-rendering: auto;
+              line-height: 1;
+              font-size: 40px;
+              font-family: 'Font Awesome 5 Pro';
+              font-weight: 900;
+            }
+          }
+
+          &:nth-child(2) {
+            &::after {
+              content: '\f104';
+            }
+          }
+
+          &:nth-child(3) {
+            &::after {
+              content: '\f105';
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .rbc-month-view {
+    border: 0;
+
+    .rbc-month-header {
+      padding: 10px;
+    }
+
+    .rbc-month-header {
+      .rbc-header {
+        border: 0;
+      }
+    }
+  }
+
+  .rbc-month-row {
+    border-top: 1px solid #ddd;
+
+    .rbc-day-bg {
+      &:first-child {
+        border-left: 1px solid #ddd;
+      }
+
+      &:last-child {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    .rbc-row-content {
+      .rbc-row {
+        .rbc-date-cell {
+          text-align: center;
+        }
+      }
+    }
+
+    .rbc-event,
+    .rbc-background-event {
+    }
+  }
+
+  .card-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: normal;
+    color: #000;
+  }
+}

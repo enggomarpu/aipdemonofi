@@ -1,0 +1,92 @@
+@import '../../../sass/variables/variables';
+
+.singlePost {
+  border: 0;
+  border-radius: 0;
+  background-color: $forground-color;
+
+  .card-header {
+    background-color: $forground-color;
+    border-radius: 0;
+    border: 0;
+
+    .post-info {
+      .userprofile {
+        max-width: 100px;
+        overflow: hidden;
+        margin-right: 15px;
+
+        > img {
+          max-width: 100%;
+        }
+      }
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card-body {
+    .custom-list {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.15px;
+          color: #333333;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #1f2d41;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .post-body {
+      margin-bottom: 30px;
+
+      .post-controls {
+        .btn {
+          padding-left: 0;
+          padding-right: 0;
+          width: auto;
+          background-color: transparent;
+          border: 0;
+          color: #212529;
+
+          &.accordion-button {
+            &::after {
+              margin-left: 10px;
+              background: url(../../../img/dropdown.png) center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

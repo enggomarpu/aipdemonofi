@@ -1,0 +1,25 @@
+.navbar-expand-lg {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        text-align: center;
+
+        &::after {
+          position: absolute;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus:active {
+          text-decoration: none;
+        }
+      }
+
+      .dropdown-menu {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../../sass/variables/variables';
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #2f3272;
+}
+
+.container {
+  border: 1px solid rgba(142, 145, 177, 0.5);
+  border-bottom: 0;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  max-width: 818px;
+}
+
+.login-container {
+  padding: 30px 0 0;
+}
+
+.input-group {
+  position: relative;
+
+  .btn {
+    border-color: #dfe0eb;
+    color: $text;
+    background-color: $forground-color;
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+
+  .form-control {
+    border-color: #dfe0eb;
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

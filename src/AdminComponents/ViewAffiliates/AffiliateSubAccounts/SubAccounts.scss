@@ -1,0 +1,39 @@
+@import '../../../sass/variables/variables';
+
+.accounts-list {
+  padding: 0;
+  list-style: none;
+  color: $heading-color;
+
+  > li {
+    padding: 15px 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $panel-border;
+    }
+
+    .editor {
+      display: inline-block;
+      color: $primary-active;
+      margin-right: 5px;
+    }
+
+    .dropdown {
+      > .btn {
+        color: $primary-active;
+      }
+
+      .dropdown-menu {
+        box-sizing: border-box;
+        border-radius: 8px;
+        left: -60px;
+
+        > li {
+          .dropdown-item {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

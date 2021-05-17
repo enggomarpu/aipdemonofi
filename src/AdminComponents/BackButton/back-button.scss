@@ -1,0 +1,23 @@
+.btn-back {
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  letter-spacing: 0.4px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+  }
+}
