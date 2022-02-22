@@ -43,7 +43,7 @@ jobs:
 
     #run: surge ./build hungry-lumber.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
     - name: Run Surge
-      run: surge ./build old-dogs.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
+      run: surge ./build drab-songs-pushy.surge.sh --token ${{secrets.PUSHNOTIFICATION}}
  
     
  
